@@ -36,7 +36,7 @@ def password_generator():
 		# print(generated)
 	empty = Label(pg, text="        ")
 	empty.pack()
-	pass_label = Label(pg, text="GENERATE PASSWORD", font=('bold',14), fg="red")
+	pass_label = Label(pg, text="GENERATE STRONG PASSWORD", font=('bold',14), fg="red")
 	pass_label.pack()
 	empty = Label(pg, text="         ")
 	empty.pack()
@@ -47,9 +47,11 @@ def password_generator():
 	pass_entry.pack()
 	empty = Label(pg, text="         ")
 	empty.pack()
-	pass_btn = Button(pg, text="GENERATE", font=5, fg="black", bg="yellow", command=pass_gen)
+	pass_btn = Button(pg, text="GENERATE NOW", font=5, fg="black", bg="yellow", command=pass_gen)
 	pass_btn.pack()
 	pg.mainloop()
 
-if __name__ == '__main__':
+if __name__ == '__main__:
 	password_generator()
+
+	
